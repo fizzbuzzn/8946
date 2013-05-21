@@ -23,5 +23,6 @@ module HackUtils
     resp  = RestClient.post url, params, headers
     doc = Nokogiri::HTML(resp.body)
     puts doc.css('div.hero-unit').text
+    doc
   end
 end
