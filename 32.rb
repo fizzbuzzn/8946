@@ -31,6 +31,5 @@ arr = []
   min, max = arr.minmax
   avg = arr.inject(0){|r,v| r+v}/arr.size.to_f
   puts "[% 3d] % 6dms, min:% 6dms, max:% 6dms, avg: %.2fms" % [i, time, min, max, avg]
-  #puts "[#{i}] #{time}ms, min:#{min_time} max:#{max_time} avg:#{avg}"
 }
 
