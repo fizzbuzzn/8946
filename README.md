@@ -1,2 +1,2 @@
 # 8946.rb
-ruby implementation for 8946.
+ruby implementation of the 8946.
