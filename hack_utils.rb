@@ -22,7 +22,7 @@ module HackUtils
     headers[:cookies] = cookies
     resp  = RestClient.post url, params, headers
     doc = Nokogiri::HTML(resp.body)
-    puts doc.css('div.hero-unit').text
+    puts doc.css('div.hero-unit').text.gsub(/\r\n?/,"\r\n")
     doc
   end
 end
