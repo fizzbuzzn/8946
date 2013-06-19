@@ -9,7 +9,6 @@ begin
     45dedbe49c95fce54c4561bbf240f4e1
     1974dc043923c87497e040acd0a23d38
   )
-
   md5s = session_histories.map{|s| HackUtils.reverse_md5(s) }
   b64dec = md5s.map{|m| Base64.decode64(m) }
   puts "md5 -> base64 -> int"
