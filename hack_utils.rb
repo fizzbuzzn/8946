@@ -25,4 +25,10 @@ module HackUtils
     puts doc.css('div.hero-unit').text.gsub(/\r\n?/,"\r\n")
     doc
   end
+
+
+def self.reverse_md5(md5)
+  resp = RestClient.get "http://md5.gromweb.com/query/#{md5}"
+  resp.body
+end
 end
